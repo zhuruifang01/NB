@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="static/replace.css" />
+	<script type="text/javascript" src="static/jquery-1.10.2.js"></script>
+	<title>指令输出_周边站</title>
+</head>
+<body>
+	<div class="logo1">
+		<img src="static/logo2.png" alt="">
+	</div>
+	<div class="button0 button2" style="width:720px;margin:0 auto;margin-top:6px;padding:0;">
+		<a href="index.html" class="btn btn-primary" style="width:80px;float:right">返回首页</a>
+	</div>
+      <div class="box3" style="margin-top:80px;">
+		  <div class="title">周边站邻区 指令输出</div>
+		  <div class="button0 button5">
+			  <a href="huawei22_update" class="btn btn-primary">华为2-2更新</a>
+			  <a href="huawei32_update" class="btn btn-primary">华为3-2更新</a>
+			  <a href="huawei42_update" class="btn btn-primary">华为4-2更新</a>
+			  <a href="alcatel22_update" class="btn btn-primary">卡特2-2更新</a>
+			  <a href="eri22_update" class="btn btn-primary">爱立信2-2更新</a>
+			  <a href="nokia22_update" class="btn btn-primary">诺基亚2-2更新</a>
+			  <a href="nokia24_update" class="btn btn-primary">诺基亚2-4更新</a>
+			  <a href="nokia32_update" class="btn btn-primary">诺基亚3-2更新</a>
+			  <a href="nokia42_update" class="btn btn-primary">诺基亚4-2更新</a>
+		  </div>
+		  <div class="title title2" style="color:coral;margin:0;">重要提示：邻区更新指令输出</div>
+		  <div class="button0 button5" style="width:330px;height:48px;margin-top:55px;border-radius:5px;overflow:hidden;">
+			  <a href="#" class="btn btn-primary tijiao" style="width:330px;height:48px;margin:0;padding:0;text-align:center;">数据更新到数据库</a>
+		  </div>
+		  <div class="title title2" style="color:coral;margin:0;margin-top:18px;text-align:center;">重要提示：数据库更新（请谨慎操作）！</div>
+      </div>
+</body>
+<script>
+	$(".tijiao").click(function(){
+	    var a=confirm("数据更新后不可修改，确定要进行此操作吗？");
+	    if(a==true){
+	        window.location.href='/sql_update'
+		}
+	});
+</script>
+</html>

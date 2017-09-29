@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="static/replace.css" />
+	<script type="text/javascript" src="static/jquery-1.10.2.js"></script>
+	<title>数据检查_领区关系</title>
+</head>
+<body>
+	<div class="logo1">
+		<img src="static/logo2.png" alt="">
+	</div>
+	<div class="button0 button2" style="width:720px;margin:0 auto;margin-top:6px;padding:0;">
+		<a href="index.html" class="btn btn-primary" style="width:80px;float:right">返回首页</a>
+	</div>
+	<div class="title">领区关系 数据检查</div>
+	<div class="title title2" style="color:coral;">温馨提示：请先操作第一模块，再操作第二模块！</div>
+	<div class="box2">
+		<div class="mokuai">
+			<div class="title title2">第一模块:现网数据导入</div>
+			<div class="title title2" style="color:coral;margin-top:70px;font-size:16px;">温馨提示：导入时间过长，建议过夜导入！</div>
+			<div class="button0 button4" style="width:300px;">
+				<a href="#" class="btn btn-primary tijiao" style="width:100%;margin:0;">现网数据导入</a>
+			</div>
+		</div>
+	    <div class="mokuai mokuai_right">
+	    	    <div class="title title2">第二模块:邻区校验</div>
+			<div class="title title2" style="font-size:16px;color:coral;">温馨提示：请先操作第一模块！</div>
+			<div class="button0 button4">
+				<a href="alcatel22_check" class="btn btn-primary">卡特2-2校验</a>
+				<a href="eri22_check" class="btn btn-primary">爱立信2-2校验</a>
+				<a href="huawei22_check" class="btn btn-primary">华为2-2更新</a>
+				<a href="huawei32_check" class="btn btn-primary">华为3-2校验</a>
+				<a href="huawei42_check" class="btn btn-primary">华为4-2校验</a>
+				<a href="nokia22_check" class="btn btn-primary">诺基亚2-2校验</a>
+				<a href="nokia24_check" class="btn btn-primary">诺基亚2-4校验</a>
+				<a href="nokia32_check" class="btn btn-primary">诺基亚3-2校验</a>
+				<a href="nokia42_check" class="btn btn-primary">诺基亚4-2校验</a>
+			</div>
+	    </div>
+	</div>
+
+</body>
+<script>
+    $(".tijiao").click(function(){
+        var a=confirm("现网数据导入，确定要进行此操作吗？");
+        if(a==true){
+			window.location.href='/import_current_network'
+        }
+    });
+</script>
+</html>
